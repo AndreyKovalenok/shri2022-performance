@@ -2,6 +2,7 @@ const path = require("path");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const FontPreloadPlugin = require("webpack-font-preload-plugin");
 
 module.exports = {
   mode: "production",
@@ -17,6 +18,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./index.html",
+    }),
+    new FontPreloadPlugin({
+      index: path.resolve(__dirname, "index.html"),
     }),
   ],
   module: {
