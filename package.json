@@ -27,6 +27,7 @@
     "domhandler": "^4.3.1",
     "domutils": "^2.8.0",
     "entities": "^2.2.0",
+    "html-loader": "^4.1.0",
     "mdn-data": "^2.0.14",
     "nth-check": "^2.1.1",
     "picocolors": "^1.0.0",
