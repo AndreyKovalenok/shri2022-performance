@@ -24,6 +24,10 @@ module.exports = {
   optimization: {
     minimize: true,
     minimizer: [new CssMinimizerPlugin(), new TerserPlugin({ parallel: true })],
+    splitChunks: {
+      chunks: "all",
+    },
+    runtimeChunk: true,
   },
   module: {
     rules: [
