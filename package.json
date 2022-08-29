@@ -1,6 +1,13 @@
 {
   "devDependencies": {
-    "svgo": "^2.8.0"
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "style-loader": "^3.3.1",
+    "svgo": "^2.8.0",
+    "svgo-loader": "^3.0.1",
+    "webpack-cli": "^4.10.0"
   },
   "name": "shri2022-performance",
   "description": "## Задание Оптимизировать страницу, выложить результат на Github-Pages и отправить его на проверку на [https://shri-performance.ru/](https://shri-performance.ru/), отправив адрес вашей страницы. Нужно набрать минимум **300 баллов**.",
@@ -25,7 +32,7 @@
     "stable": "^0.1.8"
   },
   "scripts": {
-    "optimize": "node ./optimize.js"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
